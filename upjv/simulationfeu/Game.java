@@ -26,7 +26,7 @@ public class  Game extends JPanel implements KeyListener{
 		/**Hauteur de la fenetre*/
 		private static final int HAUTEUR = 640;
 	    private boolean affiche_stats;
-		/**aggrégations utilisés: frame,level,mouse,random */
+		/**aggrï¿½gations utilisï¿½s: frame,level,mouse,random */
 		private JFrame frame;
 		private Terrain level;
 		private Mouse mouse;
@@ -41,8 +41,8 @@ public class  Game extends JPanel implements KeyListener{
 		 }
 		 
 		 /*
-		  * Methode qui permet la création de la fenetre avec les propriétés suivantes:
-		  * visibilitié
+		  * Methode qui permet la crï¿½ation de la fenetre avec les propriï¿½tï¿½s suivantes:
+		  * visibilitiï¿½
 		  * taille non modifiable
 		  * position
 		  * fermable
@@ -52,7 +52,7 @@ public class  Game extends JPanel implements KeyListener{
 		  */
 		 
 		 private void creationVue() {
-			 frame = new JFrame("simulationfeu");
+			 frame = new JFrame("Help The FireMan");
 			 frame.setVisible(true);
 			 frame.setResizable(false);
 			 frame.setLocationRelativeTo(null);
@@ -67,7 +67,7 @@ public class  Game extends JPanel implements KeyListener{
 		 
 		 /**Boucle principale du jeu
 		  * on paint le fond avec (r,g,b) 11 217 66
-		  * on met a jours les entités
+		  * on met a jours les entitï¿½s
 		  * on affiche 
 		  * */
 		 public void paint(Graphics g) {
@@ -96,9 +96,9 @@ public class  Game extends JPanel implements KeyListener{
 		 }
 		 
 		 /*
-		  * détection des touches appuyers par l'utilisateur
-		  * V pour généré un vent
-		  * S pour afficher le menu qui présente le nombres d'entités dans le jeu de feux pompiers eaux ...
+		  * dï¿½tection des touches appuyers par l'utilisateur
+		  * V pour gï¿½nï¿½rï¿½ un vent
+		  * S pour afficher le menu qui prï¿½sente le nombres d'entitï¿½s dans le jeu de feux pompiers eaux ...
 		  * C pour fermer le menu 
 		  * P pour faire pleuvoir de la pluie
 		  */
@@ -115,7 +115,7 @@ public class  Game extends JPanel implements KeyListener{
 			g.setFont(new Font("Verdana",Font.BOLD,14));
 			g.drawString("1-Maintenez le Clique Gauche de la souris",460,220);
 			g.drawString("2-Attendez quelques secondes",460,270);
-			g.drawString("3-Clique droit pour déployé les pompiers",460,320);
+			g.drawString("3-Clique droit pour dï¿½ployï¿½ les pompiers",460,320);
 			g.drawString("4-Touche P pour ralentir le feu",460,370);
 			/*comment y jouer*/
 		    g.setFont(new Font("Verdana",Font.BOLD,20));
@@ -123,21 +123,21 @@ public class  Game extends JPanel implements KeyListener{
 			g.drawString("Fonctionnement",LARGEUR / 2 - 120,50);
 			g.setFont(new Font("Verdana",Font.BOLD,15));
 			g.setColor(Color.white);
-			g.drawString("Clique Gauche Souris -> Permet de généré du feu",5,200);
-			g.drawString("Clique Droit Souris -> Permet de généré des pompiers",5,250);
-			g.drawString("Touche V -> Permet de généré du Vent",5,300);
-			g.drawString("Touche P -> Permet de généré de la pluie",5,350);
-			g.drawString("Touche S -> Menu qui affiche l'état du jeu",5,400);
-			g.drawString("Touche C -> Permet de caché le menu",5,450);
+			g.drawString("Clique Gauche Souris -> Permet de gï¿½nï¿½rï¿½ du feu",5,200);
+			g.drawString("Clique Droit Souris -> Permet de gï¿½nï¿½rï¿½ des pompiers",5,250);
+			g.drawString("Touche V -> Permet de gï¿½nï¿½rï¿½ du Vent",5,300);
+			g.drawString("Touche P -> Permet de gï¿½nï¿½rï¿½ de la pluie",5,350);
+			g.drawString("Touche S -> Menu qui affiche l'ï¿½tat du jeu",5,400);
+			g.drawString("Touche C -> Permet de cachï¿½ le menu",5,450);
 			g.setFont(new Font("Verdana",Font.BOLD,25));
 				g.drawString("Appuyer la Touche Espace pour continuer ",5,550);
 		}
 
 
  /*
-		  * détection des touches appuyers par l'utilisateur
-		  * V pour généré un vent
-		  * S pour afficher le menu qui présente le nombres d'entités dans le jeu de feux pompiers eaux ...
+		  * dï¿½tection des touches appuyers par l'utilisateur
+		  * V pour gï¿½nï¿½rï¿½ un vent
+		  * S pour afficher le menu qui prï¿½sente le nombres d'entitï¿½s dans le jeu de feux pompiers eaux ...
 		  * C pour fermer le menu 
 		  * P pour faire pleuvoir de la pluie
 		  */

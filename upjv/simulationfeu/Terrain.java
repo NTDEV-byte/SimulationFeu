@@ -118,9 +118,6 @@ public class Terrain{
 	    	  }
 	     }
 
-
-	     
-	   
 	     public Feu feuPlusProche(Entity e) {
 	    	  int max_distance = 99999;
 	    	  Feu fpp = null;
